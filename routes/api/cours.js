@@ -11,8 +11,8 @@ router.get('/',(req,res)=>{
 /// GET Cour by Category
 router.get('/:category',(req,res)=>{
     console.log("category : "+req.params.category)
-    Comment.find({category : req.params.category })
-        .then(cours => res.json(cours))
+    Cour.find({category : req.params.category })
+        .then(cours => res.json(cours) )
 })
 
 /// POST New Cour

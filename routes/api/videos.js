@@ -10,7 +10,7 @@ router.get('/',(req,res)=>{
 
 /// GET Video by cour
 router.get('/:cour',(req,res)=>{
-    Comment.find({id_cour : req.params.cour})
+    Video.find({id_cour : req.params.cour})
         .then(videos => res.json(videos))
 })
 
