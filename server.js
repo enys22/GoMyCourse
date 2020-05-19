@@ -13,7 +13,7 @@ app.use(express.json())
 const mongo_url= require('./config/kyes').mongo_url
 //const dataBase = 'coursesDB'
 
-mongoose.connect(mongo_url)
+mongoose.connect(mongo_url, {useNewUrlParser: true})
     .then(()=>console.log('MongoDB connected...'))
     .catch(err => console.log(err))
 

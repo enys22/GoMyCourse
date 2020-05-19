@@ -1,4 +1,3 @@
 module.exports = {
-    mongo_url : 'mongodb://localhost:27017',
-    dataBase : 'coursesDB'
+    mongo_url : 'mongodb://localhost:27017/coursesDB'
 }

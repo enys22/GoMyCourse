@@ -25,7 +25,7 @@ router.post('/',(req,res)=>{
 /// UPDATE Cour
 router.put('/:id',(req,res)=>{
     let id = req.params.id
-    let data = req.body.data
+    let data = req.body
     Cour.findOneAndUpdate({_id : id }, data)
         .then(cour => res.json(cour))
 })

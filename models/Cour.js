@@ -10,6 +10,9 @@ const CourSchema = new Schema({
         type : String,
         required : true
     },
+    description : {
+        type : String
+    },
     id_author : {
         type : String,
         required : true
